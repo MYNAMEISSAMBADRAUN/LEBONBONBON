@@ -1,13 +1,25 @@
-<CSS------FILE>
-    <head>
-        <style>
-            body {
-            background-color:   lightblue;
-            }
-        h1{
-            color:darkblue;
-            text-align:center;
-        }
-        </style>
-</head>
+/* Simple Element Selectors */
+body {
+    background-color: lightcoral;
+    text-align center;
+}
+h1 {
+    background-color: darkorange;
+    text-align: center;
+    color: white;
+}
+
+h2 { /*The name is often an H2 */
+    background-color: darkorange
+    text-align: center;
+    color: darkblue;
+}
+
+p{ /*Applies to all paragraphs */
+
+label{
+    font-family: fantasy;
+    color: darkblue;
+    display: block; /* Make labels take up full width */
+}
             
