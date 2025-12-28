@@ -1,19 +1,41 @@
-<DOCTYPE!html>
+<!DOCTYPE html>
+<!-- ^ DOCTYPE must be exactly this and must come first -->
+
 <html lang="en">
 <head>
-    <meta charset="UFT-8">
-    <title> TRAVIS SCOTT</title>
+    <!-- UTF-8 was misspelled as UFT-8 -->
+    <meta charset="UTF-8">
+
+    <title>TRAVIS SCOTT</title>
+
+    <!-- CSS file correctly linked in the head -->
     <link rel="stylesheet" href="badraunsam.css">
 </head>
-    <img> "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFGxaSQnCZSQPXJpmEauA_tqVSflVxp9QNZg&s" </img>
-    <body></body>
-    <div class="form-containter">
+
+<body>
+    <!-- img tag does NOT have a closing tag and the src goes inside the tag -->
+    <img 
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFGxaSQnCZSQPXJpmEauA_tqVSflVxp9QNZg&s"
+        alt="Travis Scott"
+    >
+
+    <!-- Fixed typo: form-containter → form-container -->
+    <div class="form-container">
         <h1>TRAVIS</h1>
-        <form action="+" method="POST" class="contact-form">
+
+        <!-- Form action "+" is invalid; # keeps it on the same page -->
+        <form action="#" method="POST" class="contact-form">
             <div class="form-group">
-                <label for="name"> TRAVIS SCOTT SONG</label>
-                <input type="text" id="TRAVIS" required>
+                <!-- for attribute must match input id -->
+                <label for="travis-song">TRAVIS SCOTT SONG</label>
+
+                <!-- input MUST have a name attribute -->
+                <input type="text" id="travis-song" name="travisSong" required>
             </div>
-            
+        </form>
+    </div>
+</body>
+</html>
+
 
 
