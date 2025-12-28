@@ -1,25 +1,35 @@
 /* Simple Element Selectors */
+
 body {
     background-color: lightcoral;
-    text-align center;
+
+    /* Missing colon caused CSS to break */
+    text-align: center;
 }
+
 h1 {
     background-color: darkorange;
     text-align: center;
     color: white;
 }
 
-h2 { /*The name is often an H2 */
-    background-color: darkorange
+h2 { 
+    /* Missing semicolon after background-color */
+    background-color: darkorange;
     text-align: center;
     color: darkblue;
 }
 
-p{ /*Applies to all paragraphs */
+/* Paragraph selector was never closed */
+p {
+    color: black;
+}
 
-label{
+/* Label styles */
+label {
     font-family: fantasy;
     color: darkblue;
-    display: block; /* Make labels take up full width */
+
+    /* Makes label appear above input */
+    display: block;
 }
-            
